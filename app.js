@@ -15,6 +15,10 @@ app.get("/", function (req, res) {
     res.render("index.jade");
 });
 
+app.get("/items", function (req, res) {
+    res.render("items.jade");
+});
+
 app.get("/about", function (req, res) {
     res.render("about.jade");
 });
