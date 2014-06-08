@@ -10,6 +10,7 @@ html(lang="en")
     link(rel="stylesheet", href="~/teraDB/public/css/test.css")
     link(rel="stylesheet", href="public/css/bootstrap.min.css")
     link(rel="stylesheet", href="public/css/starter-template.css")
+    link(rel="stylesheet", href="public/css/simple-sidebar.css")
   body
     .navbar.navbar-inverse.navbar-fixed-top(role="navigation")
       .container
@@ -31,8 +32,19 @@ html(lang="en")
               a(href="/contact") Contact
         
     .container
-      .starter-template
-        h1 TeraDB - Items
+      #wrapper
+          #sidebar-wrapper
+            ul.sidebar-nav
+              li.sidebar-brand
+                h1 Item filters
+              li
+                a(href='#') Weapon
+              li
+                a(href='#') Armor
+              li
+                a(href='#') Accessory
+    
+
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
     script(src="../../dist/js/bootstrap.min.js")
 
